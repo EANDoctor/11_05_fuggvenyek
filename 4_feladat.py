@@ -12,9 +12,15 @@ def shortest_word_search(wordlist):
     shortest = len(wordlist[0])
     shortest_word = wordlist[0]
     for word in wordlist:
+
         if len(word) < shortest:
             shortest = len(word)
             shortest_word = word
 
     print(f"A legrövidebb szó: {shortest_word} karakterszáma. {shortest}")
-shortest_word_search(words)
+
+
+szok = ["alma", "körte", "banán", "kiwi", "eper"]
+
+# shortest_word_search(words)
+shortest_word_search(szok)
